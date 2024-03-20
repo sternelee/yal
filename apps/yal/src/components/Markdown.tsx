@@ -1,7 +1,7 @@
 import { ResultLineItem } from '@yal-app/types';
 import rehypeRaw from 'rehype-raw';
 import remakrGfm from 'remark-gfm';
-import { createEffect, JSX } from 'solid-js';
+import { createEffect } from 'solid-js';
 import SolidMarkdown from 'solid-markdown';
 import { tailwindClasses } from 'state/theme';
 import { highlightAll } from 'utils/highlight';

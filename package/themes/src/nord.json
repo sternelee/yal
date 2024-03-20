@@ -11,7 +11,7 @@
   "results-wrapper-height": "overflow-scroll pb-10",
   "result-item": "group mx-4 flex cursor-pointer  overflow-hidden p-3",
   "result-item-info-wrapper": "ml-4 flex-auto",
-  "highlight": "bg-[#81A1C1] group highlight",
+  "highlight": "bg-[#81A1C1] rounded-lg group highlight",
   "result-item-name": "text-sm font-medium font-['Source Code Pro'] text-[#ECEFF4] group-[.highlight]:text-[#ECEFF4]",
   "result-item-description": "overflow-hidden text-sm text-[#D8DEE9] group-[.highlight]:text-[#ECEFF4]",
   "result-item-icon": "flex h-10 w-10 flex-none items-center justify-center overflow-hidden rounded-full",

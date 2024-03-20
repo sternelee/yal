@@ -10,7 +10,7 @@
   "results-wrapper-height": "overflow-scroll pb-10",
   "result-item": "items-center group mx-4 flex cursor-pointer  overflow-hidden p-3",
   "result-item-info-wrapper": "ml-4 flex-auto",
-  "highlight": "bg-[#44475a] group highlight",
+  "highlight": "bg-[#44475a] rounded-lg group highlight",
   "result-item-name": "text-md font-medium text-[#ff79c6] group-[.highlight]:text-[#ffffff]",
   "result-item-description": "overflow-hidden text-sm text-[#bd93f9] group-[.highlight]:text-[#6272a4]",
   "result-item-icon": "flex h-10 w-10 flex-none items-center justify-center overflow-hidden rounded-full",

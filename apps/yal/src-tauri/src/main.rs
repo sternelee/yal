@@ -13,6 +13,7 @@ use tauri::{
     SystemTrayMenuItem,
 };
 use tauri::{GlobalShortcutManager, State};
+use window_shadows::set_shadow;
 
 // use crate::accessibility::AppRequestAccessibilityState;
 use crate::hide_show_app::AppHiddenState;
@@ -95,27 +96,25 @@ fn main() {
         .manage(AppHiddenState(true.into()))
         // .manage(accessibility::query_accessibility_permissions())
         .setup(move |app| {
+            let window = app.get_window("main").unwrap();
+            #[cfg(any(windows, target_os = "macos"))]
+            set_shadow(&window, true).expect("Unsupported platform!");
+
             #[cfg(debug_assertions)]
             if config.dev_mode.enabled == true {
                 if config.dev_mode.open_console_at_start == true {
-                    app.get_window("main").unwrap().open_devtools();
+                    window.open_devtools();
                 }
                 if config.dev_mode.window_title != "" {
-                    app.get_window("main")
-                        .unwrap()
-                        .set_title(&config.dev_mode.window_title)
+                    window.set_title(&config.dev_mode.window_title)
                         .expect("Couldn't set title");
                 }
                 if config.dev_mode.window_decorations == true {
-                    app.get_window("main")
-                        .unwrap()
-                        .set_decorations(true)
+                    window.set_decorations(true)
                         .expect("Couldn't set decorations");
                 }
                 if config.dev_mode.window_maximize == true {
-                    app.get_window("main")
-                        .unwrap()
-                        .maximize()
+                    window.maximize()
                         .expect("Couldn't maximize the window");
                 }
             }

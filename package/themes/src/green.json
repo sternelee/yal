@@ -11,7 +11,7 @@
   "results-wrapper-height": "overflow-scroll pb-10",
   "result-item": "items-center group flex cursor-pointer  overflow-hidden p-3 rounded-lg",
   "result-item-info-wrapper": "flex-auto",
-  "highlight": "bg-[#35694B] group highlight",
+  "highlight": "bg-[#35694B] rounded-lg group highlight",
   "result-item-name": "font-medium text-gray-400 group-[.highlight]:text-white text-lg",
   "result-item-description": "overflow-hidden text-gray-500 group-[.highlight]:text-white text-lg",
   "result-item-icon": "flex h-[50px] w-[50px] flex-none items-center justify-center overflow-hidden rounded-lg mr-5",

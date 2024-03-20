@@ -15,7 +15,7 @@ export function Input() {
         value={inputText()}
         onInput={(e) => setInputText(e.currentTarget.value)}
         type="text"
-        placeholder="Search..."
+        placeholder="Search for apps and commands..."
         role="combobox"
         aria-expanded="false"
         aria-controls="options"
