@@ -27,8 +27,7 @@
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
   border-radius: 10px;
-  background: transparent;
-  -webkit-box-shadow: none;
+  background: #1B2C3F;
 }
 
 

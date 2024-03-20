@@ -56,7 +56,7 @@ export async function generateTailwindCSSFromHTML(html: string) {
 }
 
 const STYLABLE_ELEMENTS = /*tw*/ {
-  'yal-wrapper': 'flex flex-col h-screen bg-[#1B2C3F]',
+  'yal-wrapper': 'flex flex-col h-screen bg-[#1B2C3F] rounded-lg',
   'app-wrapper': 'bg-[#1B2C3F] text-lg',
   'main-wrapper': 'min-h-screen',
   'main-input':
@@ -70,7 +70,7 @@ const STYLABLE_ELEMENTS = /*tw*/ {
   'results-wrapper-height': 'overflow-scroll pb-10',
   'result-item': 'group mx-4 flex overflow-hidden p-3',
   'result-item-info-wrapper': 'ml-4 flex-auto',
-  highlight: 'bg-[#81A1C1] group highlight',
+  highlight: 'bg-[#81A1C1] rounded-lg group highlight',
   'result-item-name':
     'text-sm font-medium text-[#ECEFF4] group-[.highlight]:text-[#ECEFF4]',
   'result-item-description':
