@@ -57,7 +57,7 @@ export async function generateTailwindCSSFromHTML(html: string) {
 
 const STYLABLE_ELEMENTS = /*tw*/ {
   'yal-wrapper': 'flex flex-col h-screen bg-[#1B2C3F] rounded-lg',
-  'app-wrapper': 'bg-[#1B2C3F] text-lg',
+  'app-wrapper': 'bg-[#1B2C3F] bg-opacity-96 text-lg rounded-lg',
   'main-wrapper': 'min-h-screen',
   'main-input':
     'bg-[#1B2C3F] w-full p-3 block text-white placeholder-white focus:ring-0 sm:text-sm',
