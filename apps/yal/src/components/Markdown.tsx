@@ -2,12 +2,11 @@ import { ResultLineItem } from '@yal-app/types';
 import rehypeRaw from 'rehype-raw';
 import remakrGfm from 'remark-gfm';
 import { createEffect } from 'solid-js';
-import SolidMarkdown from 'solid-markdown';
+import { SolidMarkdown } from 'solid-markdown';
 import { tailwindClasses } from 'state/theme';
 import { highlightAll } from 'utils/highlight';
-import { Options } from 'solid-markdown/dist/ast-to-solid';
 
-const componentMap: Options['components'] = {
+const componentMap = {
   ol(props) {
     return <ol class={tailwindClasses()['markdown-ol']}>{props.children}</ol>;
   },
