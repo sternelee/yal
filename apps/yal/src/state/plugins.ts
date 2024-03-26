@@ -3,6 +3,7 @@ import { loadPlugins } from 'utils/third-party-plugins';
 import type { YalPluginsMap, YalThirdPartyPluginModule } from 'types';
 import appsPlugin from 'plugins/apps';
 import systemPlugin from 'plugins/system';
+import suggestionPlugin from 'plugins/suggestion';
 import getKeywords, * as getKeywordsPlugin from 'plugins/keywords';
 import * as reloadPlugin from 'plugins/reload';
 import * as reindexPlugin from 'plugins/reindex-apps';
@@ -75,6 +76,13 @@ export type AllPlugins = {
 
 const BASE_PLUGINS: AllPlugins = {
   yal: {
+    suggestion: {
+      pluginName: 'suggestions',
+      plugin: suggestionPlugin,
+      ...DEFAULT_CONFIG,
+      filter: false,
+      keepOpen: true,
+    },
     apps: {
       pluginName: 'apps',
       plugin: appsPlugin,

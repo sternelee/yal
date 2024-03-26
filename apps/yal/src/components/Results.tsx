@@ -20,7 +20,7 @@ export function Results() {
 
   return (
     <div onMouseMove={enableMouseOnResults} data-id="results">
-      <Show when={plugins != null && inputText().length > 0} fallback={null}>
+      <Show when={plugins != null} fallback={null}>
         <Switch>
           <Match when={!hasKeyword()}>
             <For
